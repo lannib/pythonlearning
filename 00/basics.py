@@ -34,5 +34,38 @@ print("5//6=", 5//6) #integer division that truncates the result. returns an int
 # modulus division (this yields the remainder of the division)
 print("5%3=",5%3) #should return 2
 print("3%5=",3%5) #should return 3 (essentially 0 remainder 3/5 so 3 is returned)
+
 print("5*5=",5*5)
 print("2**4=",2**4) #2 raised to the power of 4 (exponent)
+
+
+print('""""""""')
+print("'''''")
+print('\'')
+print("jackson\'s cow")
+print('I like ' + 'to go to the park') #concatonation
+
+# print('I like ' + 1) going to be a Type Error
+
+print(type(1))
+print(type("asdfasdf"))
+print(type(True))
+print(type(1.123445)) #these will print out the type of data
+
+my_variable = 10
+
+print(my_variable) #prints out assigned value of variable
+
+print(type(my_variable)) #prints the classification of variable (type)
+
+my_variable = 5
+print(my_variable)
+
+print(type(str(my_variable)))
+
+print("hello" + str(1))
+
+my_variable = 2
+print("my variable is " + str(my_variable))
+my_variable = my_variable + 5
+print("my variable is " + str(my_variable))
