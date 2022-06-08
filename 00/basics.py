@@ -43,7 +43,7 @@ print('""""""""')
 print("'''''")
 print('\'')
 print("jackson\'s cow")
-print('I like ' + 'to go to the park') #concatonation
+print('I like ' + 'to go to the park') #concatenation
 
 # print('I like ' + 1) going to be a Type Error
 

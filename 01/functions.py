@@ -102,13 +102,13 @@ def has_teen(a, b, c):
     return (a >= 13 and a <= 19) or (b >= 13 and b <= 19) or (c >= 13 and c <= 19)
 
 
-print(has_teen(10, 10, 5))
-print(has_teen(10,13,19)==True)
-print(has_teen(16,13,19)==True)
-print(has_teen(10,13,10)==True)
-print(has_teen(10,13,19)==True)
-print(has_teen(16,13,19)==True)
-print(has_teen(9,10,20)==False)
+# print(has_teen(10, 10, 5))
+# print(has_teen(10,13,19)==True)
+# print(has_teen(16,13,19)==True)
+# print(has_teen(10,13,10)==True)
+# print(has_teen(10,13,19)==True)
+# print(has_teen(16,13,19)==True)
+# print(has_teen(9,10,20)==False)
 
 
 
@@ -123,4 +123,27 @@ print(has_teen(9,10,20)==False)
 # write a function named round_fun that takes in a float and rounds it
 # round_fun(10) should return 10.0
 
-# def round_fun(my_float)
+# def round_fun(my_float):
+#     return round(my_float)
+
+# print(round_fun(12.45))
+
+# print(round_fun(1.5)==2)
+# print(round_fun(-1.5)==-2)
+# print(round_fun(-1.4)==-1)
+# print(round_fun(1.4)==1)
+# print(round_fun(0)==0)
+
+def round_fun2(float1):
+    if (float1>=0):
+        return int(float1+0.5)
+    else:
+        return int(float1-0.5)
+
+
+print(round_fun2(1117.45))
+print(round_fun2(1.5))
+print(round_fun2(-1.5))
+print(round_fun2(-1.4))
+print(round_fun2(1.4))
+print(round_fun2(0))
