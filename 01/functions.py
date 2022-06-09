@@ -141,9 +141,71 @@ def round_fun2(float1):
         return int(float1-0.5)
 
 
-print(round_fun2(1117.45))
-print(round_fun2(1.5))
-print(round_fun2(-1.5))
-print(round_fun2(-1.4))
-print(round_fun2(1.4))
-print(round_fun2(0))
+# print(round_fun2(1117.45))
+# print(round_fun2(1.5))
+# print(round_fun2(-1.5))
+# print(round_fun2(-1.4))
+# print(round_fun2(1.4))
+# print(round_fun2(0))
+
+
+
+def hello(name):
+    # returns "Hello <name>!" as a string
+    #returns an empty string if the name is jacob
+    if name=='jacob':
+        return ""
+    else:
+        return "Hello " + name + "!"
+
+print(hello('bob'))
+print(hello('ben'))
+print(hello('joshua'))
+print(hello('jacob'))
+
+print(hello('bob')=='Hello bob!')
+print(hello('ben')=='Hello ben!')
+print(hello('joshua')=='Hello joshua!')
+print(hello('jacob')=='')
+
+
+# number = 0
+
+# # if example
+# if number>1:
+#     print("Im in the first if")
+
+# if number>2:
+#     print("Im in the second if")
+# else:
+#     print("Im in the else (Jackson)")
+
+
+# number = 2
+
+# # elif example
+# if number==1:
+#     print("Im in the first if")
+# elif number==2:
+#     print("Im in the second? elif")
+# elif number<3:
+#     print("im in the third? elif")
+# else:
+#     print("Im in the else (Jackson)")
+
+
+# Given 3 int values, a b c, return their sum. However, if one of the values is 13 then it does not count towards the sum and values to its right do not count. So for example, if b is 13, then both b and c do not count.
+
+def lucky_sum(a, b, c):
+  if a==13:
+    return 0
+  if b==13:
+    return a
+  if c==13:
+    return a+b
+  else:
+    return a+b+c
+
+# lucky_sum(1, 2, 3) → 6
+# lucky_sum(1, 2, 13) → 3
+# lucky_sum(1, 13, 3) → 1
