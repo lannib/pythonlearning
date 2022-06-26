@@ -78,10 +78,52 @@ my_list = ['a', 'b', 'c', 'd']
 
 
 
-# upper() is non-mutable so must declare new a value or print line separately for the result
-a = 'abc'
-a = a.upper()
-print(a)
+# # upper() is non-mutable so must declare new a value or print line separately for the result
+# a = 'abc'
+# a = a.upper()
+# print(a)
 
 # strings, ints, bools, and floats are not mutable "primitive data types"
 # lists and any other classes/objects can have mutable methods
+
+# Given an array of ints, return the number of 9's in the array.
+
+
+# array_count9([1, 2, 9]) → 1
+# array_count9([1, 9, 9]) → 2
+# array_count9([1, 9, 9, 3, 9]) → 3
+
+nums = [9,5,9,1,2]
+
+a = 0
+
+# def array_count9(nums):
+#   a = 0
+#   for i in range(len(nums)):
+#     if nums[i] == 9:
+#       a = a + 1
+#   return a
+
+# print(array_count9(nums))
+
+
+def array_front9(nums):
+  for i in range(len(nums)):
+    if range(len(nums[i])) <= 4 and nums[i] == 9:
+      return True
+  return
+
+print(array_front9(nums))
+
+
+
+# Given an array of ints, return True if one of the first 4 elements in the array is a 9. The array length may be less than 4.
+
+
+# def array_front9(nums):
+#   for i in range(len(nums)):
+#     if i <= 3 and nums[i] == 9:
+#       return True
+#   return False
+
+print(array_front9(nums))
